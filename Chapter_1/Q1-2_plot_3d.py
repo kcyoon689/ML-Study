@@ -15,9 +15,9 @@ z2 = [1, 1, 0]
 
 fig = go.Figure()
 
-# fig = go.Figure(data=[go.Scatter3d(x=x1, y=y1, z=z1, mode='markers')])
-# fig = go.Figure(data=[go.Scatter3d(x=x2, y=y2, z=z2, mode='markers')])
 fig.add_trace(go.Scatter3d(x=x1, y=y1, z=z1, mode='markers'))
+fig.add_trace(go.Mesh3d(x=x1, y=y1, z=z1))
 fig.add_trace(go.Scatter3d(x=x2, y=y2, z=z2, mode='markers'))
+fig.add_trace(go.Mesh3d(x=x2, y=y2, z=z2))
 
 fig.show()
